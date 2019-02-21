@@ -13,7 +13,7 @@ According to Bayes Rule: P(y|x1, x2, x3..., xd) = P(x1, x2, x3..., xd|y) * P(y) 
 Below is a cited paragraph from [source link](https://towardsdatascience.com/gaussian-discriminant-analysis-an-example-of-generative-learning-algorithms-2e336ba7aa5c) talkes about the difference between discriminative and generative algorithms
 
 >Generative Learning Algorithms: 
->In Linear Regression and Logistic Regression both we modelled conditional distribution of y given x -  P(y|x)
+>In Linear Regression and Logistic Regression both we modelled conditional distribution of y given x
 
 >Algorithms that model p(y|x) directly from the training set are called **discriminative algorithms. 
 
@@ -21,6 +21,7 @@ Below is a cited paragraph from [source link](https://towardsdatascience.com/gau
 
 >Once we learn the model p(y) and p(x|y) using training set, we use Bayes Rule to derive the p(y|x) 
 
+## All in all, generative approch is to model p(x|y) and p(y) to estimate p(y|x) indirectly based on Bayes Rule, while discriminative algorithm is to model p(y|x) directly
 
 ## How to Calculate P(x1, x2, ..., xd|y)?
 
