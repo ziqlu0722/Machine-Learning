@@ -11,7 +11,7 @@ This assumption doesn't really hold, but Naive Bayes still work in many cases, u
 ## How to Calculate the Simple Unidimentional Density Function?
 ### Option 1: Model
 
-apply an imposed model, calculate the maximum likelihood parameters for the model
+Apply an imposed model, calculate the maximum likelihood parameters for the model
 * gaussian, bernoullim, binomial, exponential
 * mixture of distributions
 
@@ -43,12 +43,8 @@ ti: # of observations for the ith feature
 
 P(i): original probability = ti / M
 
-1. Laplace
-
-(ti + 1) / (ti + 1)/ (M + N)
+1. Laplace: (ti + 1) / (ti + 1)/ (M + N)
   
-2. Background + Foreground:
+2. Background + Foreground: lambda * P(i) + (1-lambda) * Q(i)
 
-lambda * P(i) + (1-lambda) * Q(i)
-
-Q(i): Sumation of tij/Mij over j experiments (from prior knowledge or preivous experiments)
+*Q(i): Sumation of tij/Mij over j experiments (from prior knowledge or preivous experiments)
