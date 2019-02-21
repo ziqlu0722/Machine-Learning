@@ -23,6 +23,7 @@ According to Bayes Rule: P(y|x1, x2, x3..., xd) = P(x1, x2, x3..., xd|y) * P(y) 
   
   
 ## GDA
-### Get Theta that Maximizes the Log likelihood of Data Points
+### Get Theta that Maximizes the loglikelihood of Data Points (best fits the data)
+assumption: data points are independent
 
 
