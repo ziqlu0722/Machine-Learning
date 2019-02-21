@@ -1,6 +1,7 @@
 # Naive Bayes
 
 ## Concept
+
 Assume: Feature Independence
 P(x1, x2, ..., xd|y) = P(x1|y) * P(x2|y) * ... * P(xd|y)
 
@@ -15,12 +16,15 @@ apply an imposed model, calculate the maximum likelihood parameters for the mode
 * mixture of distributions
 
 ### Option 2: Histogram
-bucket/cluster/bin and count feature values in each bucket/cluster/bin, and convert counts into probability
+
+Bucket/cluster/bin and count feature values in each bucket/cluster/bin, and convert counts into probability
 
 ## But there are some defects with Naive Bayes to be solved
 
 ### Problem 1: constant feature
+
 if xj is constant, then some estimates is unusable
+
 solutions:
   1. control the parameters
   2. smoothing, convert the counts into probabilities
@@ -28,6 +32,7 @@ solutions:
 
 ### Problem 2: zero probability
 This situation is common for sparse features, e.g. document data
+
 solution: smoothing
 
 
@@ -39,8 +44,11 @@ ti: # of observations for the ith feature
 P(i): original probability = ti / M
 
 1. Laplace
-  (ti + 1) / (ti + 1)/ (M + N)
+
+(ti + 1) / (ti + 1)/ (M + N)
   
 2. Background + Foreground:
+
 lambda * P(i) + (1-lambda) * Q(i)
+
 Q(i): Sumation of tij/Mij over j experiments (from prior knowledge or preivous experiments)
