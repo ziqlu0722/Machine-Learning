@@ -21,8 +21,9 @@ Below is a cited paragraph from [source link](https://towardsdatascience.com/gau
 
 >Once we learn the model p(y) and p(x|y) using training set, we use Bayes Rule to derive the p(y|x) 
 
-### All in all, generative approch is to model p(x|y) and p(y) to estimate p(y|x) indirectly based on Bayes Rule, 
-### while discriminative algorithm is to model p(y|x) directly
+All in all, 
+* generative approch >> model p(x|y) and p(y) to estimate p(y|x) indirectly based on Bayes Rule
+* discriminative algorithm >> model p(y|x) directly
 
 ## How to Calculate P(x1, x2, ..., xd|y)?
 
