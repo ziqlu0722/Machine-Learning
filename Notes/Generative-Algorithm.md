@@ -37,11 +37,5 @@ All in all,
   
   - don't fully factorize by independence like Naive Bayes
   - e.g. p(x1|y) * P(x2, x3|y) * P(x4|y)...
-  
-  
-## GDA
-### Get Theta that Maximizes the loglikelihood of Data Points (best fits the data)
-
-assumption: data points are independent
 
 
