@@ -15,7 +15,7 @@ apply an imposed model, calculate the maximum likelihood parameters for the mode
 * mixture of distributions
 
 ### Option 2: Histogram
-bucket/cluster/bin and count feature values in each bucket/..., and convert counts into probability
+bucket/cluster/bin and count feature values in each bucket/cluster/bin, and convert counts into probability
 
 ## But there are some defects with Naive Bayes to be solved
 
@@ -41,7 +41,6 @@ P(i): original probability = ti / M
 1. Laplace
   (ti + 1) / (ti + 1)/ (M + N)
   
-2. Background + Foreground
-  lambda * P(i) + (1-lambda) * Q(i)
-  Q(i): Sumation of tij/Mij over j experiments
-        from prior knowledge or preivous experiments
+2. Background + Foreground:
+lambda * P(i) + (1-lambda) * Q(i)
+Q(i): Sumation of tij/Mij over j experiments (from prior knowledge or preivous experiments)
