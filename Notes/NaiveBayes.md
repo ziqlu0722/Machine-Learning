@@ -39,10 +39,9 @@ ti: # of observations for the ith feature
 P(i): original probability = ti / M
 
 1. Laplace
->> (ti + 1) / (ti + 1)/ (M + N)
+  (ti + 1) / (ti + 1)/ (M + N)
   
 2. Background + Foreground
-
->> lambda * P(i) + (1-lambda) * Q(i)
-   Q(i): Sumation of tij/Mij over j experiments
-         from prior knowledge or preivous experiments
+  lambda * P(i) + (1-lambda) * Q(i)
+  Q(i): Sumation of tij/Mij over j experiments
+        from prior knowledge or preivous experiments
