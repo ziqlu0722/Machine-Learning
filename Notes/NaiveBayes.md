@@ -8,7 +8,7 @@ P(x1, x2, ..., xd|y) = P(x1|y) * P(x2|y) * ... * P(xd|y)
 This assumption doesn't really hold, but Naive Bayes still work in many cases, unless the assumption is completely broken
 
 
-## How to Calculate the Simple Unidimentional Density Function?
+## How to Calculate the Simple Uni-dimentional Density Function?
 ### Option 1: Model
 
 Apply an imposed model, calculate the maximum likelihood parameters for the model
